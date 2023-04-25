@@ -4,7 +4,7 @@
 * _printf - replicates standard output's printf
 *@format: format of the characters
 *@...: variable arguments
-*Return: Always 0
+*Return: number of characters printed
 */
 
 int _printf(const char *format, ...)
@@ -26,9 +26,9 @@ int _printf(const char *format, ...)
         }
         else if (format[un+1] == 's')
         {
-            int r_val = put_string(va_arg(arguments,char*));
+            int string_count = put_string(va_arg(arguments,char*));
             un++;
-            count += (r_val - 1);
+            count += (string_count - 1);
         }
         else if (format[un+1] == '%')
             _putchar('%');
@@ -40,6 +40,6 @@ int _printf(const char *format, ...)
         count ++;
         un++;
     }
-    return (0);
+    return (count);
 }
 
