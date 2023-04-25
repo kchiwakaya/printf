@@ -6,16 +6,19 @@
 *Returns: integer count
 */
 
-int getdigit(int number)
+void getdigit(int number)
 {
-    int holder;
     int count = 0;
 
+    if (number < 0)
+    {
+        _putchar('-');
+        number = -number;
+    }
     if (number == 0)
-        return(0);
-    holder = number/10;
-    getdigit(holder);
-    _putchar(number%10 + '0');
-    count += 1;
-    return (count);
-}
+        _putchar('0');
+    if (number/10)
+        getdigit(number/10);
+
+    putchar(number%10 + '0');
+   }
