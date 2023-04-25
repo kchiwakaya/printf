@@ -4,6 +4,8 @@
 *put_string - returns the number of chars
 *@strinf: the string
 *Return: number of characters in string
+*/
+
 int put_string(char *strinf)
 {
     int index = 0,count = 0;
