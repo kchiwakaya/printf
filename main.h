@@ -7,4 +7,5 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int put_string(char *strinf);
 void getdigit(int num);
+int tobinary(int num);
 #endif /* MAIN_H */
