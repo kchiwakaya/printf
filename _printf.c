@@ -4,6 +4,7 @@
 * _printf - replicates standard output's printf
 *@format: format of the characters
 *@...: variable arguments
+*Return: Always 0
 */
 
 int _printf(const char *format, ...)
