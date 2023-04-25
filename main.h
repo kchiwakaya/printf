@@ -6,5 +6,5 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int put_string(char *strinf);
-int getdigit(int num);
+void getdigit(int num);
 #endif /* MAIN_H */
