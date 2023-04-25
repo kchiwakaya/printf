@@ -14,6 +14,10 @@ int tobinary(int num)
        _putchar('0');
        return (0);
     }
+    else if (num < 0)
+    {
+        num = num * -1;
+    }
     else
     {
         int bin = num % 2 + 10 * tobinary(num/2);
