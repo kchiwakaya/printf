@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
             _putchar('%');
         else if ((format[un+1] == 'd')||(format[un+1] == 'i'))
         {
-            count += getdigit(va_arg(arguments,int));
+            getdigit(va_arg(arguments,int));
             un++;
         }
         count ++;
