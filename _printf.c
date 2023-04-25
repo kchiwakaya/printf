@@ -1,5 +1,10 @@
 #include <unistd.h>
 #include "main.h"
+/**
+* _printf - replicates standard output's printf
+*@format: format of the characters
+*@...: variable arguments
+*/
 
 int _printf(const char *format, ...)
 {
