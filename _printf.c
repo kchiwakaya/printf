@@ -36,7 +36,12 @@ int _printf(const char *format, ...)
         {
             getdigit(va_arg(arguments,int));
             un++;
-            count--;
+        }
+        else if (format[un+1] == 'b')
+        {
+            count = tobinary(va_arg(arguments,int));
+            un++;
+
         }
         count ++;
         un++;
