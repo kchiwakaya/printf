@@ -36,6 +36,7 @@ int _printf(const char *format, ...)
         {
             getdigit(va_arg(arguments,int));
             un++;
+            count--;
         }
         count ++;
         un++;
